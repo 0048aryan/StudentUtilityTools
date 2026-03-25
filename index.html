@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StudentUtilityTools | Smart Tools for Students</title>
+    <meta
+      name="description"
+      content="StudentUtilityTools offers attendance, CGPA, percentage, unit conversion, and grammar checking tools in one responsive website."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="home">
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="brand-wrap">
+          <a class="brand" href="index.html">StudentUtilityTools</a>
+          <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <nav class="site-nav">
+          <a href="index.html">Home</a>
+          <a href="attendance.html">Attendance</a>
+          <a href="cgpa.html">CGPA</a>
+          <a href="percentage.html">Percentage</a>
+          <a href="converter.html">Unit Converter</a>
+          <a href="grammar.html">Grammar Checker</a>
+          <a href="#contact">Contact Us</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero-section">
+          <div class="hero-copy glass-panel">
+            <p class="eyebrow">Academic Tools, One Platform</p>
+            <h1>Make student math and writing tasks feel instant.</h1>
+            <p class="hero-text">
+              StudentUtilityTools brings everyday academic utilities into one polished, mobile-ready website with
+              fast calculations, clean feedback, and separate pages for every tool.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="attendance.html">Start Using Tools</a>
+              <a class="button secondary" href="#contact">Contact Us</a>
+            </div>
+          </div>
+          <div class="hero-stats">
+            <article class="metric-card glass-panel">
+              <span class="metric-value">5</span>
+              <span class="metric-label">Working student tools</span>
+            </article>
+            <article class="metric-card glass-panel">
+              <span class="metric-value">100%</span>
+              <span class="metric-label">Responsive layout</span>
+            </article>
+            <article class="metric-card glass-panel">
+              <span class="metric-value">1</span>
+              <span class="metric-label">Unified student dashboard</span>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-block">
+          <div class="section-heading">
+            <p class="eyebrow">Tool Collection</p>
+            <h2>Every essential utility gets its own dedicated page.</h2>
+          </div>
+          <div class="tool-grid">
+            <a class="tool-card glass-panel" href="attendance.html">
+              <span class="tool-icon">01</span>
+              <h3>Attendance Calculator</h3>
+              <p>Track your current attendance, safe leave margin, or classes needed to reach your goal.</p>
+            </a>
+            <a class="tool-card glass-panel" href="cgpa.html">
+              <span class="tool-icon">02</span>
+              <h3>CGPA Calculator</h3>
+              <p>Enter grade points and credits to calculate accurate weighted CGPA in seconds.</p>
+            </a>
+            <a class="tool-card glass-panel" href="percentage.html">
+              <span class="tool-icon">03</span>
+              <h3>Percentage Calculator</h3>
+              <p>Sum marks across subjects and instantly convert them into overall percentage.</p>
+            </a>
+            <a class="tool-card glass-panel" href="converter.html">
+              <span class="tool-icon">04</span>
+              <h3>Unit Converter</h3>
+              <p>Switch across length, weight, temperature, volume, area, and time with live conversions.</p>
+            </a>
+            <a class="tool-card glass-panel" href="grammar.html">
+              <span class="tool-icon">05</span>
+              <h3>Grammar Checker</h3>
+              <p>Review text for common grammar mistakes, repeated words, punctuation gaps, and quick fixes.</p>
+            </a>
+          </div>
+        </section>
+
+        <section class="section-block feature-strip">
+          <article class="feature-panel glass-panel">
+            <h2>Built for real usage</h2>
+            <p>
+              The site uses responsive layouts, clear navigation, instant outputs, and polished gradients so it feels
+              closer to a production student utility portal than a demo page.
+            </p>
+          </article>
+          <article class="feature-list glass-panel">
+            <div>
+              <h3>Fast inputs</h3>
+              <p>Each page focuses on one task, reducing clutter and making repeated use easy on mobile.</p>
+            </div>
+            <div>
+              <h3>Clear outputs</h3>
+              <p>Results include context, summaries, and useful next-step guidance instead of just raw numbers.</p>
+            </div>
+            <div>
+              <h3>Consistent design</h3>
+              <p>Shared styling across pages keeps the experience cohesive while still letting each tool stand alone.</p>
+            </div>
+          </article>
+        </section>
+
+        <section class="section-block contact-section" id="contact">
+          <div class="section-heading">
+            <p class="eyebrow">Contact Us</p>
+            <h2>Reach out for feedback, bug reports, or collaboration.</h2>
+          </div>
+          <div class="contact-layout">
+            <div class="contact-card glass-panel">
+              <h3>StudentUtilityTools Support</h3>
+              <p>Questions about a calculation, a feature request, or a design improvement? Send a message below.</p>
+              <div class="contact-points">
+                <p><strong>Email:</strong>studentutilitytools@gmail.com</p>
+                <p><strong>Address:</strong> Gujarat, India</p>
+              </div>
+            </div>
+            <form class="contact-form glass-panel" id="contactForm">
+              <label>
+                Full Name
+                <input type="text" id="contactName" name="name" placeholder="Enter your name" required />
+              </label>
+              <label>
+                Email Address
+                <input type="email" id="contactEmail" name="email" placeholder="Enter your email" required />
+              </label>
+              <label>
+                Message
+                <textarea
+                  id="contactMessage"
+                  name="message"
+                  placeholder="Tell us what you need help with"
+                  rows="5"
+                  required
+                ></textarea>
+              </label>
+              <button class="button primary" type="submit">Send Message</button>
+              <p class="status-message" id="contactStatus" aria-live="polite"></p>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>&copy; 2026 StudentUtilityTools. Designed for responsive student productivity.</p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Converter | StudentUtilityTools</title>
+    <meta name="description" content="Convert between common academic and everyday units with live results." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="converter">
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="brand-wrap">
+          <a class="brand" href="index.html">StudentUtilityTools</a>
+          <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <nav class="site-nav">
+          <a href="index.html">Home</a>
+          <a href="attendance.html">Attendance</a>
+          <a href="cgpa.html">CGPA</a>
+          <a href="percentage.html">Percentage</a>
+          <a href="converter.html">Unit Converter</a>
+          <a href="grammar.html">Grammar Checker</a>
+        </nav>
+      </header>
+
+      <main class="tool-page">
+        <section class="page-intro glass-panel">
+          <p class="eyebrow">Unit Converter</p>
+          <h1>Convert values across multiple categories instantly.</h1>
+          <p>Select a category, choose units, and convert numbers across common length, weight, area, volume, time, and temperature systems.</p>
+        </section>
+
+        <section class="tool-layout">
+          <form class="tool-form glass-panel" id="converterForm">
+            <label>
+              Category
+              <select id="conversionCategory"></select>
+            </label>
+            <label>
+              Value
+              <input type="number" id="conversionValue" step="any" value="1" required />
+            </label>
+            <label>
+              From
+              <select id="fromUnit"></select>
+            </label>
+            <label>
+              To
+              <select id="toUnit"></select>
+            </label>
+            <button class="button primary" type="submit">Convert Unit</button>
+            <p class="status-message" id="converterError" aria-live="polite"></p>
+          </form>
+
+          <div class="result-panel glass-panel">
+            <h2>Converted Value</h2>
+            <div class="result-stat">
+              <span>Result</span>
+              <strong id="converterResult">--</strong>
+            </div>
+            <div class="result-stat">
+              <span>Formula Note</span>
+              <strong id="converterFormula">Choose units to see the conversion details.</strong>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Reliable unit conversion for classroom and practical use.</p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

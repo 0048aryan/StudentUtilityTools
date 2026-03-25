@@ -1,0 +1,15 @@
+{
+  "name": "studentutilitytools",
+  "version": "1.0.0",
+  "private": true,
+  "description": "StudentUtilityTools website with a lightweight Node backend.",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "nodemailer": "^7.0.3"
+  }
+}

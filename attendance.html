@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attendance Calculator | StudentUtilityTools</title>
+    <meta name="description" content="Calculate attendance percentage, classes you can miss, or sessions you need to attend." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="attendance">
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="brand-wrap">
+          <a class="brand" href="index.html">StudentUtilityTools</a>
+          <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <nav class="site-nav">
+          <a href="index.html">Home</a>
+          <a href="attendance.html">Attendance</a>
+          <a href="cgpa.html">CGPA</a>
+          <a href="percentage.html">Percentage</a>
+          <a href="converter.html">Unit Converter</a>
+          <a href="grammar.html">Grammar Checker</a>
+        </nav>
+      </header>
+
+      <main class="tool-page">
+        <section class="page-intro glass-panel">
+          <p class="eyebrow">Attendance Calculator</p>
+          <h1>Know exactly where your attendance stands.</h1>
+          <p>
+            Enter total classes, attended classes, and your desired attendance target to see your current percentage
+            and the next safe step.
+          </p>
+        </section>
+
+        <section class="tool-layout">
+          <form class="tool-form glass-panel" id="attendanceForm">
+            <label>
+              Total Classes Held
+              <input type="number" id="totalClasses" min="1" step="1" placeholder="e.g. 60" required />
+            </label>
+            <label>
+              Classes Attended
+              <input type="number" id="attendedClasses" min="0" step="1" placeholder="e.g. 48" required />
+            </label>
+            <label>
+              Target Attendance (%)
+              <input type="number" id="targetAttendance" min="1" max="100" step="0.01" value="75" required />
+            </label>
+            <button class="button primary" type="submit">Calculate Attendance</button>
+            <p class="status-message" id="attendanceError" aria-live="polite"></p>
+          </form>
+
+          <div class="result-panel glass-panel" id="attendanceResult">
+            <h2>Results</h2>
+            <div class="result-stat">
+              <span>Current Attendance</span>
+              <strong id="attendancePercent">--</strong>
+            </div>
+            <div class="result-stat">
+              <span>Status</span>
+              <strong id="attendanceSummary">Enter your details to calculate.</strong>
+            </div>
+            <div class="result-stat">
+              <span>Action Guidance</span>
+              <strong id="attendanceAction">Your next recommended step will appear here.</strong>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Track attendance accurately with StudentUtilityTools.</p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

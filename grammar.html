@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grammar Checker | StudentUtilityTools</title>
+    <meta name="description" content="Review and improve text with a built-in grammar checker for common writing mistakes." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="grammar">
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="brand-wrap">
+          <a class="brand" href="index.html">StudentUtilityTools</a>
+          <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <nav class="site-nav">
+          <a href="index.html">Home</a>
+          <a href="attendance.html">Attendance</a>
+          <a href="cgpa.html">CGPA</a>
+          <a href="percentage.html">Percentage</a>
+          <a href="converter.html">Unit Converter</a>
+          <a href="grammar.html">Grammar Checker</a>
+        </nav>
+      </header>
+
+      <main class="tool-page">
+        <section class="page-intro glass-panel">
+          <p class="eyebrow">Grammar Checker</p>
+          <h1>Improve text clarity with instant grammar suggestions.</h1>
+          <p>
+            Paste or type your paragraph to catch repeated words, punctuation issues, sentence capitalization, common
+            spelling mistakes, and quick grammar fixes.
+          </p>
+        </section>
+
+        <section class="tool-layout tool-layout-wide">
+          <div class="tool-form glass-panel">
+            <label>
+              Enter Text
+              <textarea
+                id="grammarInput"
+                rows="10"
+                placeholder="Example: i didnt recieve the assignment details and the the message was unclear"
+              ></textarea>
+            </label>
+            <div class="form-actions">
+              <button class="button primary" type="button" id="checkGrammar">Check Grammar</button>
+            </div>
+            <p class="status-message" id="grammarError" aria-live="polite"></p>
+          </div>
+
+          <div class="result-panel glass-panel grammar-results">
+            <h2>Writing Feedback</h2>
+            <div class="result-stat">
+              <span>Detected Issues</span>
+              <strong id="grammarIssueCount">--</strong>
+            </div>
+            <div class="result-box">
+              <h3>Suggested Corrections</h3>
+              <p id="grammarSuggestions">Your suggestions will appear here.</p>
+            </div>
+            <div class="result-box">
+              <h3>Corrected Preview</h3>
+              <p id="grammarCorrected">The improved version of your text will appear here.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Readable writing support for assignments, emails, and submissions.</p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

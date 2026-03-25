@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CGPA Calculator | StudentUtilityTools</title>
+    <meta name="description" content="Calculate weighted CGPA by entering subject grade points and credits." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="cgpa">
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="brand-wrap">
+          <a class="brand" href="index.html">StudentUtilityTools</a>
+          <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <nav class="site-nav">
+          <a href="index.html">Home</a>
+          <a href="attendance.html">Attendance</a>
+          <a href="cgpa.html">CGPA</a>
+          <a href="percentage.html">Percentage</a>
+          <a href="converter.html">Unit Converter</a>
+          <a href="grammar.html">Grammar Checker</a>
+        </nav>
+      </header>
+
+      <main class="tool-page">
+        <section class="page-intro glass-panel">
+          <p class="eyebrow">CGPA Calculator</p>
+          <h1>Compute weighted CGPA across all subjects.</h1>
+          <p>Add as many subjects as needed and calculate your combined CGPA using grade points and credit values.</p>
+        </section>
+
+        <section class="tool-layout tool-layout-wide">
+          <div class="tool-form glass-panel">
+            <div class="row-head">
+              <h2>Subjects</h2>
+              <button class="button secondary" type="button" id="addCgpaRow">Add Subject</button>
+            </div>
+            <div class="dynamic-list" id="cgpaRows"></div>
+            <div class="form-actions">
+              <button class="button primary" type="button" id="calculateCgpa">Calculate CGPA</button>
+            </div>
+            <p class="status-message" id="cgpaError" aria-live="polite"></p>
+          </div>
+
+          <div class="result-panel glass-panel">
+            <h2>Results</h2>
+            <div class="result-stat">
+              <span>CGPA</span>
+              <strong id="cgpaValue">--</strong>
+            </div>
+            <div class="result-stat">
+              <span>Total Credits</span>
+              <strong id="cgpaCredits">--</strong>
+            </div>
+            <div class="result-stat">
+              <span>Weighted Grade Points</span>
+              <strong id="cgpaPoints">--</strong>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Weighted grade calculations for semester planning and reporting.</p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
